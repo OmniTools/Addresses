@@ -1,0 +1,19 @@
+{
+  "name": "omnitools/addresses",
+  "description": "xxxxx",
+  "type": "omnitools-extension",
+  "authors": [
+    {
+      "name": "pixelfabrik",
+      "homepage": "https://www.pixel-fabrik.com"
+    }
+  ],
+  "require": {
+    "omnitools/core": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "OmniTools\\Addresses\\": "/src/"
+    }
+  }
+}
