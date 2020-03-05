@@ -81,6 +81,11 @@ class Person extends \OmniTools\Core\Persistence\AbstractEntity
     protected $timezone;
 
     /**
+     * @Column(type="text", nullable=true)
+     */
+    protected $noteInternal;
+
+    /**
      * Person constructor.
      */
     public function __construct(array $record = null)
@@ -190,6 +195,14 @@ class Person extends \OmniTools\Core\Persistence\AbstractEntity
     /**
      *
      */
+    public function getNoteInternal(): ?string
+    {
+        return $this->noteInternal;
+    }
+
+    /**
+     *
+     */
     public function getStreet(): ?string
     {
         return $this->street;
@@ -217,5 +230,13 @@ class Person extends \OmniTools\Core\Persistence\AbstractEntity
     public function getZipcode(): ?string
     {
         return $this->zipcode;
+    }
+
+    /**
+     *
+     */
+    public function setNoteInternal(string $noteInternal): void
+    {
+        $this->noteInternal = $noteInternal;
     }
 }
